@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ECF0F1;
+    color: #1A1A1A;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+.header {
+    position: sticky;
+    background-color: #2C3E50;
+    top: 0;
+    color: white;
+    z-index: 5000;              /* Make sure it's the highest layer */
+    padding: 15px 0;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+    text-align: center;
+}
+
+.header a {
+    color: #ECF0F1;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #3498DB;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 15%;
+}
+
+.section h1, .section h2 {
+    color: #2C3E50;                /* Dark text for contrast */
+    background-color: #ECF0F1;     /* Light gray background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.plot-container {
+    padding: 20px;
+    border: 10px solid #d88b10;
+    border-radius: 15px;
+    background-color: #d88b10;  /* Fills the area inside the border */
+    margin: 30px 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 5%;
+    }
+}
+
+.platform-toggle {
+    color: #1a73e8;
+    cursor: pointer;
+    text-decoration: none;
+}
+.platform-toggle:hover {
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    height: 8px;
+    z-index: 10000; /* Ensure it sits on top */
+}
+
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #1F2F3F; /* Keep this for visibility */
+    transition: width 0.1s ease-out;
+}
+
