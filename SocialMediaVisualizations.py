@@ -188,6 +188,7 @@ with open("jLucaniaMentalHealth.html", "w") as f:
     f.write("""<div class="section" id="heatmap"><h2>Mental Health Severity by Platform</h2>
     <p><strong>Select Mental Health Measure:</strong> <span class="platform-toggle" data-heatmap-type="depression">Depression</span>, <span class="platform-toggle" data-heatmap-type="anxiety">Anxiety</span></p>
     <p><strong>Select Data View:</strong> <span class="platform-toggle" data-heatmap-mode="counts">Counts</span>, <span class="platform-toggle" data-heatmap-mode="percent">Percentages</span></p>
+    <p><em>The counts view displays the raw number of respondents at each severity level for each platform, highlighting where responses are most concentrated. The percentages view normalizes these counts, showing the proportion of respondents at each severity level relative to the platform total, allowing for direct comparison across platforms.</em></p>
     <div class="plot-container">""")
     f.write(fig_heatmap.to_html(full_html=False, include_plotlyjs=False))
     f.write("""</div><p>This heatmap illustrates the relationship between mental health severity (Depression, Anxiety) and social media platform usage. Severity levels range from 1 (low) to 5 (high), offering a clear visual representation of mental health distributions across different platforms. The counts view highlights raw engagement numbers, while the percentages view reveals relative proportions within each severity level.
